@@ -62,8 +62,8 @@ public class LineComparison {
 		
 		int x1 = line.getStartCoordinates().getxCoordinate();
 		int y1 = line.getStartCoordinates().getyCoordinate();
-		int x2 = line.getStartCoordinates().getxCoordinate();
-		int y2 = line.getStartCoordinates().getyCoordinate();
+		int x2 = line.getEndCoordinates().getxCoordinate();
+		int y2 = line.getEndCoordinates().getyCoordinate();
 		
 		return (Math.sqrt((Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2))));
 	}
